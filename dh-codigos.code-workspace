@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\DH-Back-End-I"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "DH-Front-End-I"
+	}
+}

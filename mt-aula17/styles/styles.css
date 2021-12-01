@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(51, 49, 49);
+  padding-top: 200px;
+
+}
+
+.bolinha {
+  width: 200px;
+  height: 200px;
+  background-color: brown;
+  border-radius: 50%;
+  animation: ease-in-out 1s slideLeft infinite;
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(-550px);
+    opacity: 0.1;
+  }
+
+  25% {
+    transform: translateX(0px);
+    
+    opacity: 0.9;
+  }
+  50%{
+    transform: translateY(-100px);
+  }
+  75% {
+    transform: translateX(0px);
+    transform: translateY(0px);
+    opacity: 0.9;
+  }
+
+  100% {
+    transform: translateX(650px);
+    opacity: 0.1;
+  }
+}

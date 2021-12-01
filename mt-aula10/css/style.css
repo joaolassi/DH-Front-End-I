@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.banner {
+  height: 400px;
+  background-image: url(../img/montanha.jpg);
+  background-position: cover;
+  text-align: center;
+}
+
+.centro {
+  padding: 150px;
+}
+
+button {
+  border-radius: 20px;
+  padding: 10px 25px;
+  background-color: #B4D455;
+}
