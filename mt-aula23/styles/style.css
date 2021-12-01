@@ -2,20 +2,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
-  scroll-behavior: smooth;
   background-color: rgb(206, 205, 205);
   font-family: sans-serif;
 }
 
 header {
-  display: flex;
-  justify-content: flex-start;
+  padding: 10px;
   position: sticky;
   top: 0;
-  padding: 25px;
+  display: flex;
+  justify-content: flex-start;
   background-color: rgb(53, 48, 48);
   color: white;
 }
@@ -60,8 +60,8 @@ section>p {
 }
 
 @media (min-width: 768px) {
-  section>h1 {
-    font-size: 5em;
+  header>a {
+    font-size: 1.5rem;
   }
 
   section>p {
@@ -74,7 +74,10 @@ section>p {
 }
 
 @media (min-heigth: 850px) {
+
   .banner>img {
     height: 100vh;
   }
+
+
 }
