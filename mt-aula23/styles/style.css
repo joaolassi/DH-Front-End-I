@@ -291,6 +291,8 @@ h4 {
   .cursos {
     display: flex;
     flex-wrap: wrap;
+    margin-left: 20px;
+    /* text-align: center; */
     flex-direction: row;
     font-size: 1.2em;
     margin-top: 4vh;
@@ -344,14 +346,14 @@ h4 {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1360px) {
   header>a {
     font-size: 1.5em;
   }
   .cards {
     margin-bottom: 5vh;
     position: relative;
-    width: 500px;
+    width: 525px;
     float: left;
     transition: 300ms ease-out;
   }
@@ -368,6 +370,38 @@ h4 {
     margin-bottom: 5vh;
     position: relative;
     width: 700px;
+    float: left;
+    transition: 300ms ease-out;
+  }
+  .cards>p{
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 2000px) {
+  header>a {
+    font-size: 1.5em;
+  }
+  .cards {
+    margin-bottom: 5vh;
+    position: relative;
+    width: 800px;
+    float: left;
+    transition: 300ms ease-out;
+  }
+  .cards>p{
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 2400px) {
+  header>a {
+    font-size: 1.5em;
+  }
+  .cards {
+    margin-bottom: 5vh;
+    position: relative;
+    width: 1000px;
     float: left;
     transition: 300ms ease-out;
   }
