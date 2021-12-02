@@ -16,12 +16,14 @@ header {
   top: 0;
   display: flex;
   justify-content: flex-start;
-  background-color: rgb(53, 48, 48);
+  background-color: #1d1e22;
   color: white;
+
+  z-index: 9999;
 }
 
 header>a {
-  font-size: 2rem;
+  font-size: 1em;
   margin-left: 3vw;
   padding: 12px;
   border-radius: 15px;
@@ -34,50 +36,342 @@ header>a:hover {
   background-color: rgb(65, 63, 63);
 }
 
-.banner>img {
-  width: 100%;
-  height: 90vh;
+/* Banner */
+.container-banner {
+  display: flex;
 }
 
-.secoes {
+.bg-escuro {
+  width: 100vw;
+  height: 94vh;
+
+  background: url(./../img/lua.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profissao {
+  margin-top: -5vw;
+
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1.2em;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profissao>p {
+  color: #f3f3f3;
+  text-shadow: 1px 1px black;
+  font-weight: 300;
+}
+
+.exps {
+  margin-top: 60vw;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1.5em;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.exps>a {
+  margin: 0 3vw;
+  width: auto;
+
+  text-decoration: none;
+  color: #ffffff;
+
+  display: flex;
   justify-content: space-around;
+  align-items: center;
+
+  transition-duration: 1s;
 }
 
-section {
+.exps>a:hover {
+  margin-left: 3vw;
+  margin-right: 3vw;
+
+  color: #ffffff;
+  text-shadow: 2px 2px rgb(41, 22, 51);
+
+  transition-duration: 1s;
+}
+
+/* /Banner */
+
+/* Cursos */
+h2 {
+  margin-top: 6vh;
+  font-size: 3em;
   text-align: center;
-  margin-bottom: 30px;
 }
 
-section>h1 {
-  font-size: 4em;
-  margin: 25px 0;
+.container-cursos {
+  display: flex;
+  flex-direction: column;
+}
+
+.cursos {
+  color: white;
+  margin: 1vh auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.cards {
+  margin: 2vh 5vw;
+  padding: 50px;
+  border-radius: 25px;
+  text-align: justify;
+  background-color: #0e0b16;
+}
+
+.cards>h2 {
+  font-size: 2em;
+  margin: 3vh 0;
+  text-align: center;
+}
+
+.cards>a {
+  display: block;
+  margin-top: 4vh;
+  text-align: center;
+  color: rgb(124, 76, 76);
+  text-decoration: none;
 }
 
 section>p {
   font-size: 1.2rem;
 }
 
-@media (min-width: 768px) {
-  header>a {
-    font-size: 1.5rem;
-  }
+/* /Cursos */
 
-  section>p {
-    font-size: 1.5rem;
-  }
+/* Currículo */
+h3 {
+  margin: 3vh 0;
+  text-align: center;
+  font-size: 2em;
+}
 
-  .secoes {
-    flex-direction: row;
+h4 {
+  margin: 2vh 0;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.curriculo {
+  background-color: #b9b5b3;
+  margin: 2vh 5vw;
+  padding: 50px;
+  border-radius: 25px;
+  text-align: justify;
+}
+
+.links-git {
+  margin: 3vh auto;
+  width: 15%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  flex-direction: row;
+}
+
+.links-git>a {
+  margin-right: 5vw;
+  display: flex;
+  justify-content: center;
+
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 24px;
+  color: rgb(124, 76, 76);
+
+  transition-duration: 0.5s;
+}
+
+.links-git>a:hover {
+  color: #ccdfcb;
+  transition-duration: 0.5s;
+}
+
+/* /Currículo */
+
+@media (max-width: 382px){
+  .exps{
+    font-size: 1em;
+    text-shadow: 1px 1px black;
   }
 }
 
-@media (min-heigth: 850px) {
+@media (min-width: 768px) {
+  header>a {
+    font-size: 1.5em;
+  }
 
-  .banner>img {
+  .bg-claro {
+    width: 20vw;
+    height: 100vh;
+
+    background: url(./../img/ceuestrelado.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  .bg-escuro {
+    width: 80vw;
     height: 100vh;
   }
 
+  .exps>a{
+    font-size: 1.5em;
+    text-shadow: 1px 1px black;
+  }
 
+  .profissao {
+    margin-top: 5vh;
+
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .exps {
+    margin-top: 20vh;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .exps>a {
+    margin: 1vw;
+    width: auto;
+
+    text-decoration: none;
+    color: #ffffff;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    transition-duration: 1s;
+  }
+
+  .cursos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-size: 1.2em;
+    margin-top: 4vh;
+  }
+
+  .cards {
+    margin-bottom: 5vh;
+    position: relative;
+    width: 700px;
+    float: left;
+
+    transition: 300ms ease-out;
+  }
+
+  .cards>p {
+    font-size: 2em;
+  }
+
+  .cards:hover {
+    transform: scale(1.2);
+  }
+
+  .links-git>a {
+    text-align: center;
+    margin-right: 25px;
+    display: flex;
+    justify-content: center;
+
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 24px;
+    color: rgb(124, 76, 76);
+
+    transition-duration: 0.5s;
+  }
+}
+
+@media (min-width: 1000px) {
+  header>a {
+    font-size: 1.5em;
+  }
+  .cards {
+    margin-bottom: 5vh;
+    position: relative;
+    width: 400px;
+    float: left;
+    transition: 300ms ease-out;
+  }
+  .cards>p{
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 1440px) {
+  header>a {
+    font-size: 1.5em;
+  }
+  .cards {
+    margin-bottom: 5vh;
+    position: relative;
+    width: 500px;
+    float: left;
+    transition: 300ms ease-out;
+  }
+  .cards>p{
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 1820px) {
+  header>a {
+    font-size: 1.5em;
+  }
+  .cards {
+    margin-bottom: 5vh;
+    position: relative;
+    width: 700px;
+    float: left;
+    transition: 300ms ease-out;
+  }
+  .cards>p{
+    font-size: 1.5em;
+  }
 }

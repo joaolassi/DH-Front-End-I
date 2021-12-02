@@ -6,30 +6,152 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
   <title>Document</title>
 </head>
 
 <body>
   <header>
     <a href="#banner">Home</a>
-    <a href="#secao1">Seções</a>
+    <a href="#cursos">Cursos</a>
+    <a href="#curriculo">Currículo</a>
   </header>
 
-  <div class="container" id="banner">
-    <div class="banner">
-      <img src="./img/navio.jpg" alt="Navio">
+  <div class="container-banner" id="banner">
+    <div class="bg-claro">
     </div>
 
-    <div class="secoes">
-      <section id="secao1">
-        <h1>Seção</h1>
-        <p>Esta é a primeira seção</p>
+    <div class="bg-escuro">
+      <div class="profissao">
+        <p>João Lassi</p>
+        <h1>Web Developer</h1>
+        <p>Desenvolvedor Web</p>
+      </div>
+
+      <div class="exps">
+        <a href="https://github.com/joaolassi?tab=repositories&q=&type=&language=java&sort=" target="_blank">Java</a>
+        <a href="https://github.com/joaolassi?tab=repositories&q=&type=&language=typescript&sort="
+          target="_blank">Angular</a>
+        <a href="https://github.com/joaolassi?tab=repositories&q=&type=&language=typescript&sort="
+          target="_blank">Typescript</a>
+        <a href="https://github.com/joaolassi?tab=repositories&q=&type=&language=css&sort=" target="_blank">Css</a>
+      </div>
+    </div>
+  </div>
+
+
+  <h2 id="cursos">Meus Cursos</h2>
+  <div class="container-cursos">
+
+    <div class="cursos">
+
+      <section class="cards">
+        <h3>Certified Tech Developer</h3>
+        <p>Curso de programação voltada para o desenvolvimento web e com o
+          intuito de trazer um novato ao mundo da programação.</p>
+        <p>2021-2024</p>
       </section>
 
-      <section id="secao2">
-        <h1>Seção 2</h1>
-        <p>Esta é a segunda seção</p>
+      <section class="cards">
+        <h3>Java e Orientação a Objetos</h3>
+        <p>Curso de Java e Oriantação a Objetos ministrado pela Algaworks,
+          terminado em: 05/07/2021 com 60/h de carga horária.</p>
       </section>
+
+      <section class="cards">
+        <h3>Fullstack Angular e Spring</h3>
+        <p>Curso voltado para o fullstack, ministrado pela algaworks ainda em andamento.</p>
+        <a href="https://github.com/joaolassi/desafioscurso-api">Confira os códigos do curso clicando aqui</a>
+      </section>
+
+      <section class="cards">
+        <h3>Modelagem de Dados Relacional</h3>
+        <p>Curso de banco de dados relacional com a linguagem MySQL, ministrado
+          pela UnB e realizado entre 17/09/2020 e 04/09/2020 com carga horária de 22/h.</p>
+      </section>
+    </div>
+  </div>
+
+  <h2 id="curriculo">Meu currículo</h2>
+  <div class="container-curriculo">
+    <div class="cursos">
+
+      <section class="cards">
+        <h3>Sobre mim</h3>
+        <p>Iniciei na programação em 2019 estagiando
+          por 2 anos na Diretoria de TI da AGU.
+          Minhas principais atividades na
+          programação é o desenvolvimento WEB,
+          criado na faculdade o projeto EVA que é um
+          CRUD de artes com sistema de login e de
+          controle de usuários e seus papéis no
+          sistema. Voltado para Full Stack, busco a
+          melhor maneira para desenvolver ainda
+          mais meus conhecimentos e atuar na
+          solução de problemas.</p>
+      </section>
+
+      <section class="cards">
+        <h3>Formação</h3>
+        <p>Formado em Análise e Desenvolvimento de Sistemas pela Faculdade de
+          Tecnologia e Inovação SENAC em 08/2021.</p>
+      </section>
+    </div>
+
+    <h2 id="xp">Experiência</h2>
+    <div class="cursos">
+
+      <section class="cards">
+        <h3>Estágio</h3>
+        <p>Estágio na área de TI na Advocacia Geral da União pelo período de
+          2 anos. Na AGU trabalhei na responsividade dos formulários e consertando
+          bugs de estilização.
+        </p>
+      </section>
+
+      <section class="cards">
+        <h3>Cadastro de usuários</h3>
+        <p>
+          Sistema feito em Java e Angular com MongoDB como banco de dados para
+          teste de emprego como o simples sistema de login e salvamento de
+          usuários no banco de dados e com controle de permissões.
+        </p>
+        <div class="links-git">
+          <a href="https://github.com/joaolassi/desafiocalcme-api" target="_blank">API</a>
+          <a href="https://github.com/joaolassi/desafiocalcme-ui" target="_blank">Interface</a>
+        </div>
+      </section>
+
+      <section class="cards">
+        <h3>Gerenciamento de filmes e sesões</h3>
+        <p>
+          Sistema mais complexo feito em Java, Angular e MySQL como banco de
+          dados para teste de emprego que gerencia filmes e sessoes e controle
+          de permissões.
+        </p>
+        <div class="links-git">
+          <a href="https://github.com/joaolassi/cinebank-api" target="_blank">API</a>
+          <a href="https://github.com/joaolassi/cinebank-ui" target="_blank">Interface</a>
+        </div>
+      </section>
+
+      <section class="cards">
+        <h4>Gerenciamento de artes</h4>
+        <p>
+          O primeiro projeto da minha vida, nesse projeto atuei como líder e
+          desenvolvedor da equipe. O sistema consiste no gerenciamento de artes
+          e controle de permissões. Sistema feito em faculdade para a conclusão
+          do curso
+        </p>
+        <div class="links-git">
+          <a href="https://github.com/AlphaTeamb2/eva-back" target="_blank">API</a>
+          <a href="https://github.com/AlphaTeamb2/eva-front/tree/master" target="_blank">Interface</a>
+        </div>
+      </section>
+
+
     </div>
   </div>
 </body>
